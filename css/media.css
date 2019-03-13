@@ -1,0 +1,108 @@
+@media screen and (max-width: 991px) {
+  .menu {
+    display: block !important;
+  }
+  .menu.active {
+    right: 185px !important;
+  }
+  .menu.active .second-line {
+    opacity: 0;
+  }
+  .menu.active > span {
+    top: 24px !important;
+  }
+  .menu.active .first-line {
+    transform: rotate(45deg);
+  }
+  .menu.active .third-line {
+    transform: rotate(-45deg);
+  }
+  ul.nav-main {
+    font-size: 14px;
+    position: fixed;
+    right: -200px;
+    top: 0;
+    bottom: 0;
+    background: #1F2120;
+    line-height: 40px;
+    width: 200px;
+    transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+  }
+  ul.nav-main a {
+    color: #666;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+  }
+  ul.nav-main li {
+    float: none !important;
+    padding: 0 20px;
+    border-bottom: 1px solid #272727;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    cursor: pointer;
+  }
+  ul.nav-main li.active a {
+    color: #fff;
+  }
+  ul.nav-main li:hover {
+    background: #181A19;
+  }
+  ul.nav-main li:hover a {
+    color: #fff !important;
+  }
+  .over {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    height: 0;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 800;
+  }
+  .over.active {
+    height: 100%;
+    top: 0;
+  }
+  ul.nav-main.active {
+    right: 0;
+  }
+  .chuck {
+    height: 750px !important;
+  }
+  .second-row > .col-md-6 {
+    height: 230px !important;
+  }
+  .second-row > .col-md-6 .row .col-xs-8 {
+    padding: 68px 30px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .chuck {
+    height: 680px !important;
+  }
+  .second-row > .col-md-6 {
+    height: 201px !important;
+  }
+  .second-row > .col-md-6 .row .col-xs-8 {
+    padding: 50px 30px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container-fluid .second-row .col-xs-6 {
+    width: 100% !important;
+  }
+  .second-row > .col-md-6 {
+    height: 430px !important;
+  }
+  .second-row > .col-md-6 .row .col-xs-4 {
+    width: 100% !important;
+    height: 226px !important;
+  }
+  .second-row > .col-md-6 .row .col-xs-8 {
+    width: 100% !important;
+    padding: 50px 30px !important;
+  }
+}
